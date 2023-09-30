@@ -11,10 +11,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -37,71 +35,47 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Replit](https://your-solution-url.com)
-- Live Site URL: [Live URL](https://your-live-site-url.com)
+- Solution URL: [Replit](https://replit.com/@DeniseZitting/Newsletter-Sign-Up)
+- Live Site URL: [Live URL](https://dzitting.github.io/front-end-mentor/newsletter/index.html)
 
 ## My process
+
+I began with breaking down the design into possible HTML structures and deciding how they might interact with each other. I have created a modal of similar style so, I opted for the structure I was most familiar with. Which was to create a hole container `modal` and then two sub `div` halves that would each take 50% of the flex-box. Then style each half as if it were it's own piece.
+
+Managing the negative space was a bit difficult and tedious, but I appreciated the challenge.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+This project turned out to be more of a challenge than I expected. Mostly in terms of styling. That is where my skills lack the most!
+However, I am proud of the turnout for the CSS here:
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@media (max-width: 600px) {
+    section {
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 60vw;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        justify-content: start;
+    }
+    ...
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+And all the following styling. Using `@media` was a bit new to me, but I enjoyed learning something new.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Web Dev](https://web.dev/learn/css/transitions/) - This helped me working with the `transition` property in the CSS. For some reason, using `transition` alone was not creating the results I wanted. For instance: `transition: 300ms ease-in-out smooth` would not work as a smooth eased transition. So, I ended up working with individual properties.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Denise Zitting](https://denisezitting.netlify.app/)
+- Frontend Mentor - [@DeniseZitting](https://www.frontendmentor.io/profile/DeniseZitting)
